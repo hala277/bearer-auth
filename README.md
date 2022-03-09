@@ -23,6 +23,6 @@
 **UML**
 ![uml](./UML/UML2.jpg)
 
-[pull req]()
-[heroku]()
-[actions]()
+[pull req](https://github.com/hala277/bearer-auth/pull/1)
+[heroku](https://halabearer-auth.herokuapp.com/)
+[actions](https://github.com/hala277/bearer-auth/actions)

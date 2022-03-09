@@ -29,7 +29,7 @@ const UserModel = (sequelize,DataTypes) =>{
             const valid = await bcrypt.compare(password,user.password);
             if(valid) {
                 // generate a new token
-                let newToken = jwt.sign({username:user.username},SECRET)[15];
+                let newToken = jwt.sign({username:user.username},SECRET);
                 user.token = newToken;
                 return user;
             } else {

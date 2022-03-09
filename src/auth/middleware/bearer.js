@@ -1,11 +1,11 @@
 'use strict';
 
 
+const {User} = require('../models/index.js');
 
 
 
-
-module.exports =  (User) => async(request,response,next) => {
+module.exports = (User) => async(request,response,next) => {
     if(request.headers['authorization']) {
         // 'Bearer token'
         let bearerHeaderParts= request.headers.authorization.split(' ');
