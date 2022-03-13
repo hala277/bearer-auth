@@ -26,7 +26,7 @@ app.get('/',(request,response) => {
 
 app.post('/signup',signupFunc);
 app.post('/signin',basicAuth(User),signinFunc);
-app.get('/user',bearerAuth(User),userHandler);
+app.get('/secretstuff',bearerAuth(User),userHandler);
 
 
 // signup Function
